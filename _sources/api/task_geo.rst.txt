@@ -1,0 +1,17 @@
+task\_geo package
+=================
+
+Subpackages
+-----------
+
+.. toctree::
+
+   task_geo.data_sources
+
+Module contents
+---------------
+
+.. automodule:: task_geo
+   :members:
+   :undoc-members:
+   :show-inheritance:

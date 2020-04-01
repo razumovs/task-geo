@@ -1,0 +1,354 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data sources &mdash; task-geo 0.1.0.dev0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/coronawhy.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Credits" href="authors.html" />
+    <link rel="prev" title="Data Model" href="data_model.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> task-geo
+          
+
+          
+            
+            <img src="_static/coronawhy.jpg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">CoronaWhy Geography Task Force</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#about-coronawhy">About CoronaWhy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#about-coronawhy-geo-task">About CoronaWhy Geo Task</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#about-coronawhy-geo-task-force">About CoronaWhy Geo Task Force</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#datasets">Datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html#install">Install</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Resources</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="api/task_geo.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/task_geo.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/task_geo.data_sources.html">task_geo.data_sources package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/task_geo.data_sources.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/task_geo.data_sources.html#module-task_geo.data_sources">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/task_geo.html#module-task_geo">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#types-of-contributions">Types of Contributions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#report-bugs">Report Bugs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#fix-bugs">Fix Bugs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#implement-features">Implement Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#write-documentation">Write Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#submit-feedback">Submit Feedback</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#get-started">Get Started!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#pull-request-guidelines">Pull Request Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#unit-testing-guidelines">Unit Testing Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#tips">Tips</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_model.html">Data Model</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_model.html#general-guidelines">General guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_model.html#geographical-data-guidelines">Geographical data guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_model.html#time-related-data-guidelines">Time-related data guidelines</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data sources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-a-data-source">What is a data source?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connector-specification">Connector specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formatter-specification">Formatter specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-source-specification">Data source specification</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="authors.html#contributors">Contributors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">task-geo</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Data sources</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/CoronaWhy/task-geo/blob/master/docs/data_sources.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-sources">
+<h1>Data sources<a class="headerlink" href="#data-sources" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-a-data-source">
+<h2>What is a data source?<a class="headerlink" href="#what-is-a-data-source" title="Permalink to this headline">¶</a></h2>
+<p>A data source is a function that is able to retrieve data available anywhere (may it be a website, webservice, FTP, file,..)  and return in a format compatible with the Data Model specification.</p>
+<p>Usually a data source is composed of two parts:</p>
+<ol class="arabic simple">
+<li><p>A <strong>connector</strong>: Handles the retrieval of the raw data.</p></li>
+<li><p>A <strong>formatter</strong>: Transform the raw data to follow the data model specification.</p></li>
+</ol>
+<p>We get into the details for each component in the following sections</p>
+</div>
+<div class="section" id="connector-specification">
+<h2>Connector specification<a class="headerlink" href="#connector-specification" title="Permalink to this headline">¶</a></h2>
+<p>A connector is a function that handles the retrieval of data, it follows the prototype:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">xxx_connector</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Retrieves data from xxxx.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        argument_1(type): Explanation of what it does</span>
+<span class="sd">        ...</span>
+
+
+<span class="sd">    Returns:</span>
+<span class="sd">        pandas.DataFrame</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="o">...</span>
+    <span class="k">return</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It has to follow the following rules:</p>
+<ul class="simple">
+<li><p>It doesn’t have a fixed set of arguments, as it depends from the data we are trying to retrieve. It’s not the same a function that downloads a file, and has no need for arguments, that a function that connects to an API allowing for 5 diferent parameters.</p></li>
+<li><p>It will, however, allow to be used with the least possible amount of parameters, that is, accept as many defaults as make sense.</p></li>
+<li><p>It will, imperativemet, return a <cite>pandas.DataFrame</cite></p></li>
+<li><p>It will have a docstring explaining its arguments and type.</p></li>
+<li><p>All access to external data, as mapping of reference values should be done at this step.</p></li>
+<li><p>It will be named xxxx_connector where xxxx is the name of the source.</p></li>
+</ul>
+</div>
+<div class="section" id="formatter-specification">
+<h2>Formatter specification<a class="headerlink" href="#formatter-specification" title="Permalink to this headline">¶</a></h2>
+<p>A formatter is a function that recieves as only argument, the <cite>pandas.DataFrame</cite> returned by the connector, and returns a <cite>pandas.DataFrame</cite> following the Data Model specification. It has a prototype:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">xxx_formatter</span><span class="p">(</span><span class="n">raw</span><span class="p">):</span>
+<span class="sd">&quot;&quot;&quot;Formats data retrieved from xxx.</span>
+
+<span class="sd">Arguments:</span>
+<span class="sd">    raw(pandas.DataFrame):</span>
+
+<span class="sd">Returns:</span>
+<span class="sd">    pandas.DataFrame</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="o">...</span> <span class="c1"># pandas magic happens here</span>
+
+<span class="k">return</span> <span class="n">formatted_dataset</span>
+</pre></div>
+</div>
+<p>It has to follow the following rules:</p>
+<ul class="simple">
+<li><p>It will have as a single argument a <cite>pandas.DataFrame</cite> and return a <cite>pandas.DataFrame</cite> too.</p></li>
+<li><p>The returned <cite>pandas.DataFrame</cite> must follow the Data Model.</p></li>
+<li><p>It will named <cite>xxx_formatter</cite> where <cite>xxx</cite> is the name of the source.</p></li>
+<li><p>It should not access to any external data.</p></li>
+</ul>
+</div>
+<div class="section" id="data-source-specification">
+<h2>Data source specification<a class="headerlink" href="#data-source-specification" title="Permalink to this headline">¶</a></h2>
+<p>Data sources are functions that retrieve data and format them to follow the Data Model, internally, shouldn’t be more complex than:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">xxx</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Data Source for xxx.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        argument_1(type):</span>
+<span class="sd">        ...</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        pandas.DataFrame</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">xxx_connector</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">xxx_formatter</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It have to follow the rules:</p>
+<ul>
+<li><p>It will have the same exact arguments that it’s connector and will return a <cite>pandas.DataFrame</cite>.</p></li>
+<li><p>It will be importable from top-module level, that is:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">task_geo.data_sources.xxx</span> <span class="kn">import</span> <span class="n">xxx</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>As a bonus point, it’s nice to include a notebook or a little script working as both ‘usage documentation’ and ‘end-to-end’ test.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="authors.html" class="btn btn-neutral float-right" title="Credits" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="data_model.html" class="btn btn-neutral float-left" title="Data Model" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Manuel Alvarez
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
